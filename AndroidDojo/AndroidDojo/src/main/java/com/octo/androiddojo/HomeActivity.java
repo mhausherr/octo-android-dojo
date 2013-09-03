@@ -6,16 +6,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class HomeActivity extends Activity {
+import roboguice.activity.RoboActivity;
+import roboguice.inject.ContentView;
+import roboguice.inject.InjectView;
 
+@ContentView(R.layout.activity_home)
+public class HomeActivity extends RoboActivity {
+
+    @InjectView(R.id.button_send)
     private Button sendButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
-
-        sendButton = (Button) findViewById(R.id.button_send);
 
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
