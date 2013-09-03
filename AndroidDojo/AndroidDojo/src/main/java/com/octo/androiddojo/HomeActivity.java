@@ -20,7 +20,7 @@ public class HomeActivity extends Activity {
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(HomeActivity.this, "Send SMS", Toast.LENGTH_LONG).show();
+                Toast.makeText(HomeActivity.this, getString(R.string.text_toast_send_sms), Toast.LENGTH_LONG).show();
             }
         });
     }
