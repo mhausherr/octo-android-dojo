@@ -7,5 +7,6 @@
     <string name="text_button_send_sms">Send SMS</string>
     <string name="text_toast_send_sms">Send SMS</string>
     <string name="title_activity_config_activty">ConfigActivty</string>
+    <string name="text_button_config">Configuration</string>
 
 </resources>

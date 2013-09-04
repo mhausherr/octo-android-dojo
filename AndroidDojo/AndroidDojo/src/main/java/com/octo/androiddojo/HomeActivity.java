@@ -16,6 +16,9 @@ public class HomeActivity extends RoboActivity {
     @InjectView(R.id.button_send)
     private Button sendButton;
 
+    @InjectView(R.id.button_config)
+    private Button configButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +29,14 @@ public class HomeActivity extends RoboActivity {
                 Uri uri = Uri.parse("sms:0621795734");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
                 intent.putExtra("sms_body", "Je vais être en retard j'ai beaucoup de boulot");
+                startActivity(intent);
+            }
+        });
+
+        configButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this, ConfigActivty.class);
                 startActivity(intent);
             }
         });
