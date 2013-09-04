@@ -25,6 +25,7 @@ public class HomeActivity extends RoboActivity {
             public void onClick(View view) {
                 Uri uri = Uri.parse("sms:0621795734");
                 Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                intent.putExtra("sms_body", "Je vais être en retard j'ai beaucoup de boulot");
                 startActivity(intent);
             }
         });
