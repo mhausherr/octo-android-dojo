@@ -6,5 +6,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="text_button_send_sms">Send SMS</string>
     <string name="text_toast_send_sms">Send SMS</string>
+    <string name="title_activity_config_activty">ConfigActivty</string>
 
 </resources>
